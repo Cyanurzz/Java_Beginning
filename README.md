@@ -7,4 +7,4 @@
 ![Test Array & Matrix](https://github.com/Cyanurzz/Java_Beginning/blob/Java_Training_1_2_3/img/ARR+Matrix.png?raw=true)
 _Résultat terminal_   
 ## Object Training  
-![Test Object Trainig](https://github.com/Cyanurzz/java-training/blob/master/src/exercices/img/ObjectTraining.png)
+![Test Object Trainig](https://github.com/Cyanurzz/Java_Beginning/blob/Java_Training_1_2_3/img/ObjectTraining.png?raw=true)
