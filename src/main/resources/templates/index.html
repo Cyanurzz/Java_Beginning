@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild And Wizard</title>
+</head>
+<body>
+<h1>Wild And Wizard</h1>
+<section>
+    <h3>Search Wizards:</h3>
+    <a href="/wizards">Browse all wizards</a>
+    <br><br>
+    <form action="/wizard" method="get">
+        <label>Search by id:</label>
+        <input name="id" placeholder="1" required type="text">
+        <input type="submit" value="Send">
+    </form>
+    <br>
+    <form action="/wizards/search" method="get">
+        <label>Search by last name:</label>
+        <input name="lastName" placeholder="Weasley" required type="text">
+        <input type="submit" value="Send">
+    </form>
+</section>
+<section>
+    <h3>Search School:</h3>
+    <a href="/schools">Browse all schools</a>
+    <br><br>
+    <form action="/school" method="get">
+        <label>Search by id:</label>
+        <input name="id" placeholder="1" required type="text">
+        <input type="submit" value="Send">
+    </form>
+    <br>
+    <form action="/schools/search" method="get">
+        <label>Search by country:</label>
+        <input name="country" placeholder="USA" required type="text">
+        <input type="submit" value="Send">
+    </form>
+</section>
+</body>
+</html>
