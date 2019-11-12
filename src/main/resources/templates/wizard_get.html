@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild And Wizard - Wizard Result</title>
+</head>
+<body>
+<ul>
+    <li th:text="|Id: ${wizard.id}|">$id</li>
+    <li th:text="|First name: ${wizard.firstName}|">$firstName</li>
+    <li th:text="|Last name: ${wizard.lastName}|">$lastName</li>
+    <li th:text="|Birthday: ${wizard.birthday}|">$birthday</li>
+    <li th:text="|Birth place: ${wizard.birthPlace}|">$birthPlace</li>
+    <li th:text="|Is Muggle: ${wizard.muggle}|">$isMuggle</li>
+</ul>
+<a href="/">Go back</a>
+</body>
+</html>
