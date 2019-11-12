@@ -17,7 +17,7 @@ class TestDate {
         int year = sc.nextInt();
         sc.close();
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy"); 
+        SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy"); 
         Calendar c = new GregorianCalendar(year, month - 1, day);
         Date d = c.getTime();
         
