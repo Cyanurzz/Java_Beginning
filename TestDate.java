@@ -18,7 +18,7 @@ class TestDate {
         sc.close();
 
         SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy"); 
-        Calendar c = new GregorianCalendar(year, month - 1, day);
+        Calendar c = new GregorianCalendar(month - 1, day, year);
         Date d = c.getTime();
         
         int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
