@@ -1,4 +1,4 @@
-package com.wildCodeSchool.JDBC1.SELECT.Controller;
+package com.wildcodeschool.wildandwizard.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

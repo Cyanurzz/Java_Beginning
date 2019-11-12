@@ -1,11 +1,11 @@
-package com.wildCodeSchool.JDBC1.SELECT.Controller;
+package com.wildcodeschool.wildandwizard.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.wildCodeSchool.JDBC1.SELECT.repository.SchoolRepository;
+import com.wildcodeschool.wildandwizard.repository.SchoolRepository;
 
 @Controller
 public class SchoolController {

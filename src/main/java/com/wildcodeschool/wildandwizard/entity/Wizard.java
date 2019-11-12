@@ -1,4 +1,4 @@
-package com.wildCodeSchool.JDBC1.SELECT.entity;
+package com.wildcodeschool.wildandwizard.entity;
 
 import java.util.Date;
 

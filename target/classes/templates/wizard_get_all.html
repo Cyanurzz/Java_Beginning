@@ -5,29 +5,6 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 </head>
 <body>
-
-	<hr>
-	<form action="/wizard/create" method="post">
-    	<label for="wizard-first-name">First name:</label>
-    	<input id="wizard-first-name" name="firstName" placeholder="Harry" required type="text">
-
-    	<label for="wizard-last-name">Last name:</label>
-	    <input id="wizard-last-name" name="lastName" placeholder="Potter" required type="text">
-
-    	<label for="wizard-birthday">Birthday:</label>
-	    <input id="wizard-birthday" name="birthday" placeholder="1980-07-31" required type="date">
-
-    	<label for="wizard-birth-place">Birth Place:</label>
-    	<input id="wizard-birth-place" name="birthPlace" placeholder="London" required type="text">
-
-    	<label for="wizard-biography">Biography:</label>
-    	<textarea id="wizard-biography" name="biography"></textarea>
-
-    	<label for="wizard-is-muggle">Is Muggle ?</label>
-    	<input id="wizard-is-muggle" name="muggle" type="checkbox" value="true">
-
-    	<input type="submit" value="Send">
-	</form>
 	<hr>
     <ul th:each="Wizard : ${wizards}">
     	<li th:text="|Id: ${Wizard.id}|">$id</li>

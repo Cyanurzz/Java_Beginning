@@ -1,10 +1,10 @@
-package com.wildCodeSchool.JDBC1.SELECT;
+package com.wildcodeschool.wildandwizard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Jdbc1SelectApplicationTests {
+class WildAndWizardApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.wildCodeSchool.JDBC1.SELECT.repository;
+package com.wildcodeschool.wildandwizard.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.wildCodeSchool.JDBC1.SELECT.entity.School;
+import com.wildcodeschool.wildandwizard.entity.School;
 
 public class SchoolRepository {
 
