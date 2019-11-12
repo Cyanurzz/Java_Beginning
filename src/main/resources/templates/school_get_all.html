@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild And Wizard - Schools Result</title>
+</head>
+<body>
+<ul th:each="school : ${schools}">
+    <li th:text="|Id: ${school.id}|">$id</li>
+    <li th:text="|Name: ${school.name}|">$name</li>
+    <li th:text="|Capacity: ${school.capacity}|">$capacity</li>
+    <li th:text="|Country: ${school.country}|">$country</li>
+</ul>
+<a href="/">Go back</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild And Wizard</title>
+</head>
+<body>
+<h1>Wild And Wizard</h1>
+<section>
+    <h3>Remove a Wizard:</h3>
+    <a href="/wizards">Browse all wizards</a>
+    <br><br>
+    <form action="/wizard/delete" method="get">
+        <label>Delete by id:</label>
+        <input name="id" placeholder="1" required type="text">
+        <input type="submit" value="Send">
+    </form>
+</section>
+<section>
+    <h3>Remove a School:</h3>
+    <a href="/schools">Browse all schools</a>
+    <br><br>
+    <form action="/school/delete" method="get">
+        <label>Delete by id:</label>
+        <input name="id" placeholder="1" required type="text">
+        <input type="submit" value="Send">
+    </form>
+</section>
+</body>
+</html>
