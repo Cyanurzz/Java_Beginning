@@ -1,19 +1,41 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Wild And Wizard - Wizards Result</title>
+    <title>Thymeleaf</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 </head>
 <body>
-<ul th:each="wizard : ${wizards}">
-    <li th:text="|Id: ${wizard.id}|">$id</li>
-    <li th:text="|First name: ${wizard.firstName}|">$firstName</li>
-    <li th:text="|Last name: ${wizard.lastName}|">$lastName</li>
-    <li th:text="|Birthday: ${wizard.birthday}|">$birthday</li>
-    <li th:text="|Birth place: ${wizard.birthPlace}|">$birthPlace</li>
-    <li th:text="|Biography: ${wizard.biography}|">$biography</li>
-    <li th:text="|Is Muggle: ${wizard.muggle}|">$isMuggle</li>
-</ul>
-<a href="/">Go back</a>
+
+	<hr>
+	<form action="/wizard/create" method="post">
+    	<label for="wizard-first-name">First name:</label>
+    	<input id="wizard-first-name" name="firstName" placeholder="Harry" required type="text">
+
+    	<label for="wizard-last-name">Last name:</label>
+	    <input id="wizard-last-name" name="lastName" placeholder="Potter" required type="text">
+
+    	<label for="wizard-birthday">Birthday:</label>
+	    <input id="wizard-birthday" name="birthday" placeholder="1980-07-31" required type="date">
+
+    	<label for="wizard-birth-place">Birth Place:</label>
+    	<input id="wizard-birth-place" name="birthPlace" placeholder="London" required type="text">
+
+    	<label for="wizard-biography">Biography:</label>
+    	<textarea id="wizard-biography" name="biography"></textarea>
+
+    	<label for="wizard-is-muggle">Is Muggle ?</label>
+    	<input id="wizard-is-muggle" name="muggle" type="checkbox" value="true">
+
+    	<input type="submit" value="Send">
+	</form>
+	<hr>
+    <ul th:each="Wizard : ${wizards}">
+    	<li th:text="|Id: ${Wizard.id}|">$id</li>
+	    <li th:text="|First name: ${Wizard.firstName}|">$firstName</li>
+    	<li th:text="|Last name: ${Wizard.lastName}|">$lastName</li>
+	    <li th:text="|Birthday: ${Wizard.birthday}|">$birthday</li>
+    	<li th:text="|Birth place: ${Wizard.birthPlace}|">$birthPlace</li>
+    	<li th:text="|Is Muggle: ${Wizard.muggle}|">$isMuggle</li>
+	</ul>
 </body>
 </html>
