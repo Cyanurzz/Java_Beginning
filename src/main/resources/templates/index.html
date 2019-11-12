@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild And Wizard</title>
+</head>
+<body>
+<h1>Wild And Wizard</h1>
+<section>
+    <h3>Create a new wizard:</h3>
+    <form action="/wizard/create" method="post">
+        <label for="wizard-first-name">First name:</label>
+        <input id="wizard-first-name" name="firstName" placeholder="Harry" required type="text">
+        <br><br>
+        <label for="wizard-last-name">Last name:</label>
+        <input id="wizard-last-name" name="lastName" placeholder="Potter" required type="text">
+        <br><br>
+        <label for="wizard-birthday">Birthday:</label>
+        <input id="wizard-birthday" name="birthday" placeholder="1980-07-31" required type="date">
+        <br><br>
+        <label for="wizard-birth-place">Birth Place:</label>
+        <input id="wizard-birth-place" name="birthPlace" placeholder="London" required type="text">
+        <br><br>
+        <label for="wizard-biography">Biography:</label>
+        <textarea id="wizard-biography" name="biography"></textarea>
+        <br><br>
+        <label for="wizard-is-muggle">Is Muggle ?</label>
+        <input id="wizard-is-muggle" name="muggle" type="checkbox" value="true">
+        <br><br>
+        <input type="submit" value="Send">
+    </form>
+</section>
+<section>
+    <h3>Create a new school:</h3>
+    <form action="/school/create" method="post">
+        <label for="school-name">Name:</label>
+        <input id="school-name" name="name" placeholder="Wild Code School" required type="text">
+        <br><br>
+        <label for="school-capacity">Capacity:</label>
+        <input id="school-capacity" name="capacity" placeholder="40" required type="number">
+        <br><br>
+        <label for="school-country">Country:</label>
+        <input id="school-country" name="country" placeholder="France" required type="text">
+        <br><br>
+        <input type="submit" value="Send">
+    </form>
+</section>
+</body>
+</html>
