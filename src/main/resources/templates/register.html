@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Registration</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<form action="/wizard/register" method="post">
+    <input name="idWizard" th:value="${wizard.id}" type="hidden">
+    <h1 th:text="|${wizard.firstName} ${wizard.lastName}|"></h1>
+    <label for="course">Register a course:</label>
+    <select id="course" name="idCourse">
+        <option th:each="course : ${allCourses}" th:text="${course.name}"
+                th:value="${course.id}">wizard name
+        </option>
+    </select>
+    <input type="submit" value="Send">
+</form>
+<h3>Student courses:</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="course : ${wizard.courses}">
+        <td th:text="${course.id}">id</td>
+        <td th:text="${course.name}">name</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<a href="/">Return to students list</a>
+</body>
+</html>

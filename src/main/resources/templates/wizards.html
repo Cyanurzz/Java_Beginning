@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wizard List</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    th, td {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 5px;
+        text-align: left;
+    }
+</style>
+<body>
+<h3>Students:</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Birthday</th>
+        <th>Birth place</th>
+        <th>Biography</th>
+        <th>Muggle</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="wizard : ${wizards}">
+        <td th:text="${wizard.id}">id</td>
+        <td th:text="${wizard.firstName}">first name</td>
+        <td th:text="${wizard.lastName}">last name</td>
+        <td th:text="${wizard.birthday}">birthday</td>
+        <td th:text="${wizard.birthPlace}">birth place</td>
+        <td th:text="${wizard.biography}">biography</td>
+        <td th:text="${wizard.muggle}">muggle</td>
+        <td><a th:href="@{/wizard/register(idWizard=${wizard.id})}">courses</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
