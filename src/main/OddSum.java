@@ -19,7 +19,7 @@ public class OddSum {
         for (int i = 0; i < args.length; i++) {
             try {
                 listInt.add(Integer.parseInt(args[i]));
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
 
                 System.out.println(args[i] + " cannot be translate in integer");
                 return -1;
