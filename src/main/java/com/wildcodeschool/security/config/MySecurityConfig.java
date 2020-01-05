@@ -27,16 +27,12 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 		PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 		auth.inMemoryAuthentication()
 	    .withUser("Steve")
-	        .password(encoder.encode("motdepasse"))
+			.password(encoder.encode("password"))
 	        .roles("CHAMPION")
 	        .and()
 	    .withUser("Nick")
 	        .password(encoder.encode("flerken"))
-			.roles("DIRECTOR")
-			.and()
-		.withUser("Ctrl+c")
-			.password(encoder.encode("Ctrl+v"))
-			.roles("YouLook'sLikeADev");
+			.roles("DIRECTOR");
 	}
 
 }
