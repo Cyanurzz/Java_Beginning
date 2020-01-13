@@ -26,7 +26,7 @@ public class Shield {
 
         
         // TODO 2 : filter heroes in order to found heroes that are gluten intolerants
-        List<Hero> intolerants = heroes.stream().filter(Hero -> Hero.isGlutenIntolerant()).collect(Collectors.toList());
+        List<Hero> intolerants = heroes.stream().filter(hero -> hero.isGlutenIntolerant()).collect(Collectors.toList());
         
        System.out.println("\nGluten intolerants:");
        for (Hero intolerant : intolerants) {
