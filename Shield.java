@@ -14,7 +14,7 @@ public class Shield {
         names.add("Jemma Simmons");
 
         // TODO 1 : map names to agents list
-        List<Agent> agents = names.stream().map(item -> new Agent(item.split(" ")[0],item.split(" ")[1])).collect(Collectors.toList());
+        List<Agent> agents = names.stream().map(agent -> new Agent(item.split(" ")[0],item.split(" ")[1])).collect(Collectors.toList());
         showAgents(agents);
     }
 
