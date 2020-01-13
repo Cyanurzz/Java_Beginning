@@ -17,7 +17,7 @@ public class Shield {
         heroes.add(new Hero("Doctor Strange", 42, false));
 
         // TODO 1 : filter heroes in order to found heroes older than 59
-        List<Hero> elders = heroes.stream().filter(Hero -> Hero.getAge() > 59).collect(Collectors.toList());
+        List<Hero> elders = heroes.stream().filter(hero -> Hero.getAge() > 59).collect(Collectors.toList());
 
         System.out.println("\nElders:");
         for (Hero elder : elders) {
